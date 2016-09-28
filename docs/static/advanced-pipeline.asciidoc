@@ -49,7 +49,7 @@ Edit the `first-pipeline.conf` file and replace the entire `input` section with 
 input {
     file {
         path => "/path/to/file/*.log"
-        start_position => beginning <1>
+        start_position => "beginning" <1>
         ignore_older => 0 <2>
     }
 }
@@ -199,7 +199,7 @@ something like this:
 input {
     file {
         path => "/Users/myusername/tutorialdata/*.log"
-        start_position => beginning
+        start_position => "beginning"
         ignore_older => 0 
     }
 }
